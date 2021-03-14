@@ -1,0 +1,51 @@
+body {
+	background:#274060;
+	background-size: cover;
+	position: fixed;
+	width: 100%;
+	direction: rtl;
+}
+
+.content{
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	color: white;
+}
+
+.input-container{
+	display: flex;
+	flex-flow: column nowrap;
+	width: 70%;
+	align-self: center;
+	justify-self: center;
+	text-align: center;
+	margin-top: 55px;
+
+}
+input[type="text"]{
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px #E8F7EE solid;
+	outline: 0;
+	transition: border-color .2s;
+	&::placeholder{
+		color: transparent;
+	}
+
+}
+#submit-button{
+	margin: 5px;
+	width: 40%;
+	align-self: center;
+}
+.weather-tile {
+	width: 300px;
+	margin: 5px;
+	height: 125px;
+	border-radius: 8px;
+	align-self: center;
+	background-color:#FFFD98;
+	background-blend-mode: soft-light
+	color: ;
+}

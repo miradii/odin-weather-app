@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="style.css" media="all" />
+		<title>Odin Weather App</title>
+	</head>
+	<body>
+		<div class="content">
+			<div class="input-container">
+				<input
+					id="city-name"
+					type="text"
+					name=""
+					placeholder="نام شهر خود را وارد کنید"
+				/>
+
+				<label class="input-label" for="city-name">کجا هستید؟</label>
+				<button id="submit-button">جستجو</button>
+			</div>
+			<div class="weather-tile" id="weather-tile"> 
+				<h2 id="city-name">{{city}}</h2>
+				<div id="weather-info">
+					<div id="main-weather"><span id="weather-temp"> {{mainTemp}}&degC  </span></div>
+
+					<div id="secondary-weather"><div id="feels-like">مانند:{{feelsLike}}&deg</div> <div id="min">حداقل:&deg {{tempMin}}</div><div id="max">حداکثر:&deg {{tempMax}}</div></div>
+					<img src="{{icon}}" alt="">
+				</div>
+				<div id="weather-descrption">{{description}}</div>
+				<div id="extra-info">
+					<span id="pressure">فشار هوا: {{pressure}}</span>
+					<span id="humidity">رطوبت هوا: {{humidity}}</span>
+				</div>
+			</div>
+		</div>
+
+		<script src="./main.js"></script>
+	</body>
+</html>

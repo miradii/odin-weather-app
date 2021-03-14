@@ -1,0 +1,126 @@
+body {
+	background:url(./resources/background.jpg) no-repeat;
+	background-size: cover;
+	position: fixed;
+	width: 100%;
+	direction: rtl;
+}
+
+.content{
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	color: white;
+}
+
+.input-container{
+	display: flex;
+	flex-flow: column nowrap;
+	align-self: center;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;	
+}
+input[type="text"]{
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px #E8F7EE solid;
+	outline: 0;
+	transition: border-color .2s;
+	padding: 2px;
+ 
+}
+
+input[type="text"]::placeholder{
+		color: transparent;
+	}
+input[type="text"]:placeholder-shown~.input-label{
+	cursor: text;
+	top: 20px;
+	font-size: 15px;
+	
+}
+
+.input-label {
+  position: absolute;
+  top:4px;
+  display: block;
+  transition: 0.2s;
+  font-size: .7rem;
+  color: #9b9b9b;
+}
+
+input[type="text"]:focus{
+	padding-bottom: 6px;
+	font-weight: 700px;
+	border-width: 3px;
+	 border-image: linear-gradient(to right, #11998e, #38ef7d);
+	 border-image-slice: 1;
+}
+
+
+input[type="text"]:focus~.input-label{
+  position: absolute;
+  top: 4px;
+  display: block;
+  transition: 0.2s;
+  font-size: .7rem;
+  color: #11998e;
+  font-weight: 700;
+}
+
+#submit-button{
+	display: block;
+	margin: 5px;
+	width: 40%;
+	align-self: center;
+}
+.weather-tile {
+	width: 400px;
+	margin: 35px;
+	height: 225px;
+	border-radius: 8px;
+	align-self: center;
+	background-color:transparent;
+}
+
+#city-name-display{
+	font-size: 24px;
+	text-align: center;
+	margin: 0;
+}
+#weather-info {
+	padding: 4px;
+	display:flex;
+	flex-direction: row nowrap;
+	justify-content: space-between;
+}
+#main-weather {
+	
+	font-size: 52px;
+	margin: 2px;
+	width: 35%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+#secondary-weather{
+	display: flex;
+	flex-direction: column;
+	height: 100px;
+}
+#weather-description {
+	text-align: center;
+}
+#extra-info{
+	display: flex;
+	justify-content: space-around;
+}
+#error-message {
+	color:crimson;
+	text-align: center;
+}
+img{
+	min-height: 100px;
+	min-width: 100px
+}
